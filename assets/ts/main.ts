@@ -10,14 +10,20 @@ abstract class Telefono implements ITelefono {
 }
 }
 class mobile extends Telefono{
-    Ricarica(){
-        let ric = <HTMLInputElement>  document.querySelector(".ric") ;
-        let soldi =  this.carica + ric.value
-        return document.querySelector("#vedi-item").innerHTML = soldi 
+    Ricarica():number{
+        let ric:number = <HTMLInputElement>  document.querySelector(".ric") ;
+        let soldi:number =  this.carica += ric.value
+        return document.querySelector(".vedi-item").innerHTML = soldi 
     }
     TogliSoldi(){
-        
+        let togli = this.carica - 0.20
+        return togli
     }
+    error404(){
+    if (this.carica <= 0) {
+        return alert ("Non puoi effettuare la chiamata")
+    }
+}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
