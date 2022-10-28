@@ -11,7 +11,8 @@ abstract class Telefono implements ITelefono {
 }
 class mobile extends Telefono{
     Ricarica():number{
-        let ric:number = <HTMLInputElement>  document.querySelector(".ric") ;
+        let ric = <HTMLInputElement>  document.querySelector(".ric") ;
+        let nuovoric:number = ric.value
         let soldi:number =  this.carica += ric.value
         return document.querySelector(".vedi-item").innerHTML = soldi 
     }

@@ -8,6 +8,7 @@ class Telefono {
 class mobile extends Telefono {
     Ricarica() {
         let ric = document.querySelector(".ric");
+        let nuovoric = ric.value;
         let soldi = this.carica += ric.value;
         return document.querySelector(".vedi-item").innerHTML = soldi;
     }
