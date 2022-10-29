@@ -33,6 +33,9 @@ let btn3 = <HTMLButtonElement> document.querySelector(".haweii");
 let input = <HTMLInputElement> document.querySelector(".input");
 let input2 = <HTMLInputElement> document.querySelector(".input2");
 let input3 = <HTMLInputElement> document.querySelector(".input3");
+let button1  =  <HTMLButtonElement> document.querySelector(".btn1");
+let button2 = <HTMLButtonElement> document.querySelector(".btn2");
+let button3  = <HTMLButtonElement> document.querySelector(".btn3");
 // input function
 input.onkeyup = function keyup(e){
     let inp = +input.value;
@@ -48,7 +51,7 @@ input.onkeyup = function keyup(e){
     }
 }
 input2.onkeyup = function keyup(e){
-    let inp = +input.value;
+    let inp = +input2.value;
     if(e.key === "Enter"){
         let totale = samsung.carica += inp;
         let p = <HTMLParagraphElement> document.querySelector(".vedi-item2");
@@ -61,7 +64,7 @@ input2.onkeyup = function keyup(e){
     }
 }
 input3.onkeyup = function keyup(e){
-    let inp = +input.value;
+    let inp = +input3.value;
     if(e.key === "Enter"){
         let totale = haweii.carica += inp;
         let p = <HTMLParagraphElement> document.querySelector(".vedi-item3");
@@ -75,7 +78,9 @@ input3.onkeyup = function keyup(e){
 }
 // togli soldi function
 
-
+button1.onclick = function onclick (){
+    
+}
 
 
 

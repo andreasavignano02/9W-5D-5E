@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
     input2.onkeyup = function keyup(e) {
-        let inp = +input.value;
+        let inp = +input2.value;
         if (e.key === "Enter") {
             let totale = samsung.carica += inp;
             let p = document.querySelector(".vedi-item2");
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
     input3.onkeyup = function keyup(e) {
-        let inp = +input.value;
+        let inp = +input3.value;
         if (e.key === "Enter") {
             let totale = haweii.carica += inp;
             let p = document.querySelector(".vedi-item3");
