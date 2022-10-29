@@ -41,24 +41,26 @@ let btn = <HTMLButtonElement> document.querySelector(".iphone");
 let btn2 = <HTMLButtonElement> document.querySelector(".samsung");
 let btn3 = <HTMLButtonElement> document.querySelector(".haweii");
 // contatore delle chiamate
-if (iphone.carica > 0){
 btn.onclick = function click(){
-    iphone.Aggiungi()
-}}
- else {
+   if (iphone.carica > 0){
+    return iphone.Aggiungi()
+}else {
     return iphone.error404()
-}
-if (samsung.carica > 0){
-btn2.onclick = function click(){
-    samsung.Aggiungi()
-}}else{
- return samsung.error404()
-}
-if (haweii.carica > 0){
-btn3.onclick = function click(){
-    haweii.Aggiungi()
-}}else{
-    return haweii.error404()
+} 
 }
 
+btn2.onclick = function click(){
+    if (samsung.carica > 0){
+    samsung.Aggiungi()
+    }else{
+    return samsung.error404()
+    }
+    }
+btn3.onclick = function click(){
+   if (haweii.carica > 0){
+    haweii.Aggiungi()
+   }else{
+    return haweii.error404()
+}
+}
 })

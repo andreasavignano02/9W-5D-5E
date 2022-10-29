@@ -37,13 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
     let btn = document.querySelector(".iphone");
     let btn2 = document.querySelector(".samsung");
     let btn3 = document.querySelector(".haweii");
+    // contatore delle chiamate
     btn.onclick = function click() {
-        iphone.Aggiungi();
+        if (iphone.carica > 0) {
+            return iphone.Aggiungi();
+        }
+        else {
+            return iphone.error404();
+        }
     };
     btn2.onclick = function click() {
-        samsung.Aggiungi();
+        if (samsung.carica > 0) {
+            samsung.Aggiungi();
+        }
+        else {
+            return samsung.error404();
+        }
     };
     btn3.onclick = function click() {
-        haweii.Aggiungi();
+        if (haweii.carica > 0) {
+            haweii.Aggiungi();
+        }
+        else {
+            return haweii.error404();
+        }
     };
 });
