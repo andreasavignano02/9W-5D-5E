@@ -1,6 +1,52 @@
 body{
     background-color: black;
 }
+.abbellire{
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+}
+.exp{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ric{
+    width: 40%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
 #container{
-    color:white
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+.allineare{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.white{
+    color: white;
+}
+#container-button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+.btn{
+    width: 40%;
+    margin-bottom: 10px;
+}
+#vedi_a_schermo{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.model-p{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
